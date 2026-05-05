@@ -1,6 +1,6 @@
 # E-Commerce API
 
-This repository contains the source code for an E-Commerce Web API built with .NET 10 and C#. The project is a collaborative effort by interns to reinforce knowledge of building RESTful APIs.
+This repository contains the source code for an E-Commerce Web API built with .NET 10 and C#. The project is a collaborative effort to reinforce knowledge of building RESTful APIs.
 
 ---
 
