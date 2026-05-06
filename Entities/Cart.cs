@@ -5,7 +5,7 @@ namespace E_commerce_API.Entities
     public class Cart
     {
         public int Id { get; set; }
-        public DateOnly CreatedAt { get; set; } = new DateOnly();
+        public DateOnly CreatedAt { get; set; } = global::System.DateOnly.FromDateTime(global::System.DateTime.UtcNow);
 
         public List<CartItem> CartItems { get; set; }
 
