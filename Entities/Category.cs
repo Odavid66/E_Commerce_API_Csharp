@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.Xml;
 
-namespace E_commerce_API.Entities
+namespace E_Commerce_API.Entities
 {
     public class Category
     {

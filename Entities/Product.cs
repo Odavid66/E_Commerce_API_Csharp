@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace E_commerce_API.Entities
+namespace E_Commerce_API.Entities
 {
     public class Product
     {

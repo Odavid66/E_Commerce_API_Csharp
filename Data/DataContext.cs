@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using E_commerce_API.Entities;
+using E_Commerce_API.Entities;
 
-namespace E_commerce_API.Data
+namespace E_Commerce_API.Data
 {
     // Inheriting from DbContext is what gives this class its database superpowers
     public class DataContext : DbContext
