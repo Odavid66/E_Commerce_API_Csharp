@@ -76,29 +76,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Branch Naming Conventions
-To maintain consistency, follow these branch naming conventions:
-- **Feature branches**: `feature/<description>` (e.g., `feature/user-payment-entities`)
-- **Bugfix branches**: `bugfix/<description>` (e.g., `bugfix/fix-login-issue`)
-- **Hotfix branches**: `hotfix/<description>` (e.g., `hotfix/critical-payment-bug`)
-- **Release branches**: `release/<version>` (e.g., `release/v1.0.0`)
-
----
-
-## Contributing
-We welcome contributions from all team members! To contribute:
-1. Create a new branch following the naming conventions.
-2. Make your changes and commit them with clear messages.
-3. Push your branch to the remote repository.
-4. Open a pull request for review.
-
----
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Authors
 - Babafemi(https://github.com/Femitun)
 - David(https://github.com/Odavid66)
