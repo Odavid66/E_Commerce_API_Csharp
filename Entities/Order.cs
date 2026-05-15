@@ -7,7 +7,7 @@ namespace E_Commerce_API.Entities
         public int Id { get; set; }
         public int TotalPrice { get; set; } = 0;
         public string Status { get; set; } = string.Empty;
-        public DateOnly CreatedAt { get; set; } = new DateOnly();
+        public DateOnly CreatedAt { get; set; } = DateOnly.FromDateTime(DateTime.Now);
 
         public List<OrderItem> OrderItems { get; set; }
 
