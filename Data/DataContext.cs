@@ -27,6 +27,23 @@ namespace E_Commerce_API.Data
         {
             base.OnModelCreating(modelBuilder);
             // Example: modelBuilder.Entity<User>().HasKey(u => u.Id);
+
+            // Configure decimal properties with precision and scale
+            modelBuilder.Entity<Order>()
+                .Property(o => o.TotalAmount)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.UnitPrice)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Payment>()
+                .Property(p => p.Amount)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Product>()
+                .Property(pr => pr.Price)
+                .HasPrecision(18, 2);
         }
     }
 }

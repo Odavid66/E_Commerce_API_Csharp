@@ -5,11 +5,12 @@ namespace E_Commerce_API.Entities
     public class Cart
     {
         public int Id { get; set; }
-        public DateOnly CreatedAt { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public List<CartItem> CartItems { get; set; }
+        public List<CartItem>? CartItems { get; set; }
 
         [ForeignKey("UserId")]
-        public User User { get; set; }
+        public int UserId { get; set; }
+        public User? User { get; set; }
     }
 }

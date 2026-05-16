@@ -4,22 +4,14 @@ namespace E_Commerce_API.Entities
 {
     public class Product
     {
-        public int id { get; set; }
-        // Id of each products
-        public string Mame { get; set; }
-        // Name of each product 
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        // Description of each product and it can be empty
         public decimal Price { get; set; }
-        // Price of one product
-        public int stock { get; set; }
-        //quantity of each product
+        public int Stock { get; set; }
 
-        [ForeignKey("ProductCategory")]
-        public int? Category { get; set; }
-        // The key that links to the category table
-        public Category? ProductCatogory { get; set; }
-        //  navigation property — lets you access the full Category object
-        //  the ? means it can be null (not always loaded)
+        [ForeignKey("CategoryId")]
+        public int? CategoryId { get; set; }
+        public Category? ProductCategory { get; set; }
     }
 }
